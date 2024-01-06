@@ -108,7 +108,8 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void teleopPeriodic() {
-        
+        RobotContainer.getInstance().m_driveTrain.CMDteleOp(RobotContainer.getInstance().getDriveController());
+       
     }
 
     @Override
